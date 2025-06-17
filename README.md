@@ -2,8 +2,6 @@
 
 Quiz Master is a comprehensive quiz platform built with Next.js 13, MongoDB, and TypeScript. Create, take, and analyze quizzes with a beautiful, modern interface and powerful features.
 
-![Quiz Master Platform](public/preview.png)
-
 ## ✨ Features
 
 - **Quiz Management**
