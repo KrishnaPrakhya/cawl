@@ -1,36 +1,146 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Quiz Master - Modern Quiz Platform
 
-## Getting Started
+Quiz Master is a comprehensive quiz platform built with Next.js 13, MongoDB, and TypeScript. Create, take, and analyze quizzes with a beautiful, modern interface and powerful features.
 
-First, run the development server:
+![Quiz Master Platform](public/preview.png)
+
+## ✨ Features
+
+- **Quiz Management**
+
+  - Create custom quizzes with multiple questions
+  - Set time limits and visibility options
+  - Support for various question types
+  - Easy quiz editing and management
+
+- **Interactive Quiz Taking**
+
+  - Real-time scoring and feedback
+  - Timer functionality
+  - Responsive design for all devices
+  - Session-based quiz attempts
+
+- **Analytics & Insights**
+
+  - Detailed performance analytics
+  - Individual and aggregate quiz statistics
+  - Export results to CSV and PDF
+  - Visual data representations
+
+- **Modern UI/UX**
+  - Clean, intuitive interface
+  - Smooth animations and transitions
+  - Responsive design
+  - Dark/Light mode support
+
+## 🚀 Tech Stack
+
+- **Frontend**
+
+  - Next.js 13 (App Router)
+  - TypeScript
+  - Tailwind CSS
+  - Shadcn UI Components
+  - Lucide Icons
+
+- **Backend**
+
+  - MongoDB
+  - Next.js API Routes
+  - MongoDB Atlas
+
+- **Features**
+  - Real-time Updates
+  - PDF Generation (jsPDF)
+  - CSV Export
+  - Data Visualization
+
+## 🛠️ Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/quiz-master.git
+cd quiz-master
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Set up environment variables:
+   Create a `.env.local` file with:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Create a Quiz**
 
-## Learn More
+   - Click "Create Quiz" on the homepage
+   - Add questions and configure settings
+   - Set visibility and time limits
+   - Save and publish your quiz
 
-To learn more about Next.js, take a look at the following resources:
+2. **Take a Quiz**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   - Browse available quizzes
+   - Start a quiz session
+   - Answer questions within the time limit
+   - View results immediately
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **View Analytics**
+   - Access the analytics dashboard
+   - View performance metrics
+   - Export results in CSV/PDF formats
+   - Track user progress
 
-## Deploy on Vercel
+## 🔐 Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Required environment variables:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```env
+MONGODB_URI=your_mongodb_connection_string
+```
+
+## 📦 Project Structure
+
+```
+quiz-master/
+├── app/                   # Next.js App Router
+│   ├── analytics/        # Analytics pages
+│   ├── api/             # API routes
+│   ├── create/          # Quiz creation
+│   ├── quiz/           # Quiz taking
+│   └── results/        # Results viewing
+├── components/          # React components
+├── lib/                # Utilities and helpers
+└── public/             # Static assets
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Next.js team for the amazing framework
+- Shadcn for the beautiful UI components
+- MongoDB team for the powerful database
+- All contributors and users of the platform
